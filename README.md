@@ -2,7 +2,7 @@
 
 [![Tests Status Badge](https://github.com/balintpethe/laravel-universal-scraper/actions/workflows/tests.yml/badge.svg)](https://github.com/balintpethe/laravel-universal-scraper/actions/workflows/tests.yml)
 [![PHPStan Status Badge](https://github.com/balintpethe/laravel-universal-scraper/actions/workflows/phpstan.yml/badge.svg)](https://github.com/balintpethe/laravel-universal-scraper/actions/workflows/phpstan.yml)
- 
+
 Egy könnyen bővíthető, konfigurálható web scraping toolkit Laravel projektekhez. Célja, hogy deklaratív módon — profile-okon és CSS selectorokon keresztül — tudd leírni, hogyan kell egy webshop vagy tetszőleges oldal HTML-jéből strukturált adatot kinyerni.
 
 ## Fő funkciók
