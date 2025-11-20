@@ -1,0 +1,72 @@
+{
+  "name": "balintpethe/laravel-universal-scraper",
+  "description": "Universal web scraping toolkit for Laravel applications.",
+  "keywords": [
+    "laravel",
+    "scraper",
+    "web-scraper",
+    "webscraper",
+    "web",
+    "scraping",
+    "crawler",
+    "html",
+    "data-extraction",
+    "data-mining",
+    "web-data",
+    "web-content",
+    "content-extraction",
+    "content-scraping",
+    "export",
+    "exporter",
+    "json"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bálint Pethe",
+      "email": "info@balintpethe.com"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^10.0|^11.0",
+    "illuminate/http": "^10.0|^11.0",
+    "symfony/dom-crawler": "^7.0",
+    "symfony/css-selector": "^7.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0|^9.0",
+    "pestphp/pest": "^2.0",
+    "pestphp/pest-plugin-laravel": "^2.0",
+    "phpunit/phpunit": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Balintpethe\\LaravelUniversalScraper\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Balintpethe\\LaravelUniversalScraper\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "pest"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Balintpethe\\LaravelUniversalScraper\\LaravelUniversalScraperServiceProvider"
+      ],
+      "aliases": {
+        "UniversalScraper": "Balintpethe\\LaravelUniversalScraper\\Facades\\UniversalScraper"
+      }
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
